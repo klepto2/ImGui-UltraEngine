@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ImGui</RootNamespace>
+    <UseNativeEnvironment>true</UseNativeEnvironment>
+    <ProjectName>ImGui</ProjectName>
+    <ProjectGuid>{D9B8506C-503D-47C2-8807-679EB8527036}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="PropertySheet.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\</OutDir>
+    <IntDir>.vs\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>.vs\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)\</OutDir>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;NOMINMAX;_HAS_STD_BYTE=0;_NEWTON_STATIC_LIB;_CUSTOM_JOINTS_STATIC_LIB;</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(UltraEnginePath)\Include;$(UltraEnginePath)\Include\Libraries\zlib;$(UltraEnginePath)\Include\Libraries\Box2D;$(UniversalCRT_LibraryPath);$(UltraEnginePath)\Include\Libraries\freetype\include;$(UltraEnginePath)\Include\Libraries\OpenAL\include;$(UltraEnginePath)\Include\Libraries\RecastNavigation\RecastDemo\Include;$(UltraEnginePath)\Include\Libraries\RecastNavigation\DetourCrowd\Include;$(UltraEnginePath)\Include\Libraries\RecastNavigation\DetourTileCache\Include;$(UltraEnginePath)\Include\Libraries\RecastNavigation\DebugUtils\Include;$(UltraEnginePath)\Include\Libraries\RecastNavigation\Recast\Include;$(UltraEnginePath)\Include\Libraries\RecastNavigation\Detour\Include;$(UltraEnginePath)\Include\Libraries\sol3\include;$(UltraEnginePath)\Include\Libraries\Lua\src;$(UltraEnginePath)\Include\Libraries\enet\include;$(UltraEnginePath)\Include\Libraries\newton\sdk\dTinyxml;$(UltraEnginePath)\Include\Libraries\newton\sdk\dNewton\dExtensions;$(UltraEnginePath)\Include\Libraries\newton\sdk\dNewton\dIkSolver;$(UltraEnginePath)\Include\Libraries\newton\sdk\dNewton\dJoints;$(UltraEnginePath)\Include\Libraries\newton\sdk\dNewton\dModels\dVehicle;$(UltraEnginePath)\Include\Libraries\newton\sdk\dNewton\dModels\dCharacter;$(UltraEnginePath)\Include\Libraries\newton\sdk\dNewton\dModels;$(UltraEnginePath)\Include\Libraries\newton\sdk\dNewton\dParticles;$(UltraEnginePath)\Include\Libraries\newton\sdk\dNewton;$(UltraEnginePath)\Include\Libraries\newton\sdk\dCore;$(UltraEnginePath)\Include\Libraries\newton\sdk\dCollision;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dVehicle\dMultiBodyVehicle;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dVehicle;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dMath;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dgCore;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dgNewton;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dAnimation;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dgTimeTracker;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dContainers;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dCustomJoints</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeaderFile>UltraEngine.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <SectionAlignment>
+      </SectionAlignment>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <AdditionalLibraryDirectories>$(UltraEnginePath)\Library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>UltraEngine_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ProgramDatabaseFile>.vs\$(Configuration)\$(TargetName).pdb</ProgramDatabaseFile>
+      <ImportLibrary>.vs\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NOMINMAX</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NOMINMAX;_HAS_STD_BYTE=0;_NEWTON_STATIC_LIB;_CUSTOM_JOINTS_STATIC_LIB;</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <AdditionalIncludeDirectories>$(UltraEnginePath)\Include;$(UltraEnginePath)\Include\Libraries\zlib;$(UltraEnginePath)\Include\Libraries\Box2D;$(UniversalCRT_LibraryPath);$(UltraEnginePath)\Include\Libraries\freetype\include;$(UltraEnginePath)\Include\Libraries\OpenAL\include;$(UltraEnginePath)\Include\Libraries\RecastNavigation\RecastDemo\Include;$(UltraEnginePath)\Include\Libraries\RecastNavigation\DetourCrowd\Include;$(UltraEnginePath)\Include\Libraries\RecastNavigation\DetourTileCache\Include;$(UltraEnginePath)\Include\Libraries\RecastNavigation\DebugUtils\Include;$(UltraEnginePath)\Include\Libraries\RecastNavigation\Recast\Include;$(UltraEnginePath)\Include\Libraries\RecastNavigation\Detour\Include;$(UltraEnginePath)\Include\Libraries\sol3\include;$(UltraEnginePath)\Include\Libraries\Lua\src;$(UltraEnginePath)\Include\Libraries\enet\include;$(UltraEnginePath)\Include\Libraries\newton\sdk\dTinyxml;$(UltraEnginePath)\Include\Libraries\newton\sdk\dNewton\dExtensions;$(UltraEnginePath)\Include\Libraries\newton\sdk\dNewton\dIkSolver;$(UltraEnginePath)\Include\Libraries\newton\sdk\dNewton\dJoints;$(UltraEnginePath)\Include\Libraries\newton\sdk\dNewton\dModels\dVehicle;$(UltraEnginePath)\Include\Libraries\newton\sdk\dNewton\dModels\dCharacter;$(UltraEnginePath)\Include\Libraries\newton\sdk\dNewton\dModels;$(UltraEnginePath)\Include\Libraries\newton\sdk\dNewton\dParticles;$(UltraEnginePath)\Include\Libraries\newton\sdk\dNewton;$(UltraEnginePath)\Include\Libraries\newton\sdk\dCore;$(UltraEnginePath)\Include\Libraries\newton\sdk\dCollision;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dVehicle\dMultiBodyVehicle;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dVehicle;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dMath;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dgCore;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dgNewton;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dAnimation;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dgTimeTracker;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dContainers;$(UltraEnginePath)\Include\Libraries\NewtonDynamics\sdk\dCustomJoints</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeaderFile>UltraEngine.h</PrecompiledHeaderFile>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalOptions>/OPT:NOICF,NOLBR %(AdditionalOptions)</AdditionalOptions>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
+      <AdditionalLibraryDirectories>$(UltraEnginePath)\Library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>UltraEngine.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImportLibrary>.vs\$(Configuration)\$(TargetName).lib</ImportLibrary>
+    </Link>
+    <PostBuildEvent>
+      <Command>"$(UltraEnginePath)\Tools\upx.exe" "$(TargetName)$(TargetExt)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Gizmos\TextEditor.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\imgui-integration\ImGuiManager.cpp" />
+    <ClCompile Include="Source\imgui-integration\imgui\imgui.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\imgui-integration\imgui\imgui_demo.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\imgui-integration\imgui\imgui_draw.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\imgui-integration\imgui\imgui_tables.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\imgui-integration\imgui\imgui_widgets.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\UltraEngine.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Components\Motion\Mover.hpp" />
+    <ClInclude Include="Source\Components\Player\CameraControls.hpp" />
+    <ClInclude Include="Source\Gizmos\TextEditor.h" />
+    <ClInclude Include="Source\imgui-integration\ImGuiManager.h" />
+    <ClInclude Include="Source\imgui-integration\imgui\imconfig.h" />
+    <ClInclude Include="Source\imgui-integration\imgui\imgui.h" />
+    <ClInclude Include="Source\imgui-integration\imgui\imgui_internal.h" />
+    <ClInclude Include="Source\imgui-integration\imgui\imstb_rectpack.h" />
+    <ClInclude Include="Source\imgui-integration\imgui\imstb_textedit.h" />
+    <ClInclude Include="Source\imgui-integration\imgui\imstb_truetype.h" />
+    <ClInclude Include="Source\resource.h" />
+    <ClInclude Include="Source\targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Source\project.rc" />
+    <ResourceCompile Include="Source\projecticon.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

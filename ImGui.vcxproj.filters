@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Components">
+      <UniqueIdentifier>{1329df82-61c9-4ed0-92cd-314866d32727}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Components\Motion">
+    </Filter>
+    <Filter Include="Source Files\Components\Player">
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{54f0adeb-8b31-4c2f-979f-e4ee6840b918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ImGui">
+      <UniqueIdentifier>{7307c65c-e689-4f5c-b674-9bbe59c62a99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Integration">
+      <UniqueIdentifier>{86578c3e-504a-4a2f-afe8-36b2a2f16134}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Gizoms">
+      <UniqueIdentifier>{3b532b67-4d70-4d28-8284-da7b3d550914}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\UltraEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imgui-integration\imgui\imgui.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imgui-integration\imgui\imgui_demo.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imgui-integration\imgui\imgui_draw.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imgui-integration\imgui\imgui_tables.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imgui-integration\imgui\imgui_widgets.cpp">
+      <Filter>Source Files\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\imgui-integration\ImGuiManager.cpp">
+      <Filter>Source Files\Integration</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Gizmos\TextEditor.cpp">
+      <Filter>Source Files\Gizoms</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Components\Motion\Mover.hpp">
+      <Filter>Source Files\Components\Motion</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Components\Player\CameraControls.hpp">
+      <Filter>Source Files\Components\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imgui-integration\imgui\imconfig.h">
+      <Filter>Source Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imgui-integration\imgui\imgui.h">
+      <Filter>Source Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imgui-integration\imgui\imgui_internal.h">
+      <Filter>Source Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imgui-integration\imgui\imstb_rectpack.h">
+      <Filter>Source Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imgui-integration\imgui\imstb_textedit.h">
+      <Filter>Source Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imgui-integration\imgui\imstb_truetype.h">
+      <Filter>Source Files\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\imgui-integration\ImGuiManager.h">
+      <Filter>Source Files\Integration</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Gizmos\TextEditor.h">
+      <Filter>Source Files\Gizoms</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Source\project.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+    <ResourceCompile Include="Source\projecticon.ico">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

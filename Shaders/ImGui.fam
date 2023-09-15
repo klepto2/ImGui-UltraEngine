@@ -1,0 +1,30 @@
+{
+	"shaderFamily":
+	{
+		"hidden": true,
+		"root": "./PBR.fam",
+		"static":
+		{
+			"float":
+			{
+				"OPAQUE":
+				{
+					"default":
+					{
+						"base":
+						{
+							"vertex": "Shaders/ImGui.vert.spv",
+							"fragment": "Shaders/ImGui.frag.spv",
+							"transparency":"Shaders/ImGui.frag.spv"
+						},
+						"depthPass":
+						{
+							"vertex": "Shaders/ImGui.vert.spv",
+							"fragment": "Shaders/ImGui.frag.spv"
+						}
+					}
+				}
+			}
+		}
+	}
+}

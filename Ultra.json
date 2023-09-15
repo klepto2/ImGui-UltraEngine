@@ -1,0 +1,26 @@
+{
+	"project":
+	{
+		"currentpath": "kb3d_utopia.fbxobj.native/KB3DTextures",
+		"name":
+		[
+			73,
+			109,
+			71,
+			117,
+			105
+		],
+		"templates":
+		[
+			"C++",
+			"Common"
+		],
+		"validationLayers":
+		{
+			"debug":
+			[
+				"VK_LAYER_KHRONOS_validation"
+			]
+		}
+	}
+}
