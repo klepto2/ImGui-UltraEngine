@@ -3,6 +3,10 @@
 A backend for using [Dear ImGui](https://github.com/ocornut/imgui) in [UltraEngine
 ](https://www.ultraengine.com/)
 
+(Update 03/20/2024)
+
+	- Changed Shaderfamily and shaders to support UltraEngine 0.9.5
+
 Basic integration is done using the Docking branch of "Dear ImGui".
 Supports nearly everything, only the new Viewport-System will be implemented at a later time.
 
