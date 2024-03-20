@@ -1,9 +1,7 @@
 #version 450
-#extension GL_GOOGLE_include_directive : enable
-#extension GL_EXT_multiview : enable
+#extension GL_ARB_shader_draw_parameters : enable
 
 #define WRITE_COLOR
-//#define PREMULTIPLY_ALPHA
-//#define CLIPPINGREGION
+#define CLIPPINGREGION
 
 #include "../Base/Base_vert.glsl"
